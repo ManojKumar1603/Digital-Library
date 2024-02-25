@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<title>New Page 1</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="epoch_styles.css" />
+<script type="text/javascript" src="epoch_classes.js"></script>
+<script type="text/javascript">
+/*You can also place this code in a separate file and link to it like epoch_classes.js*/
+	var bas_cal,dp_cal,ms_cal;      
+window.onload = function () {
+	//bas_cal = new Epoch('epoch_basic','flat',document.getElementById('basic_container'));
+	dp_cal  = new Epoch('epoch_popup','popup',document.getElementById('popup_container'));
+	dp_cal  = new Epoch('epoch_popup','popup',document.getElementById('popup_container1'));
+		dp_cal  = new Epoch('epoch_popup','popup',document.getElementById('popup_container2'));
+			dp_cal  = new Epoch('epoch_popup','popup',document.getElementById('popup_container3'));
+
+	//ms_cal  = new Epoch('epoch_multi','flat',document.getElementById('multi_container'),true);
+};
+    </script>
+
+
+
+<body>
+
+<p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+<form method="POST" action="#">
+  <p align="center"><font face="Arial Rounded MT Bold" size="6">
+  <span style="background-color: #FFFFFF">&nbsp;</span></font><font color="#FF0000"><b><font size="6" face="Arial Rounded MT Bold"><span style="background-color: #FFFFFF">
+  <u>Specify Date of Classes Taken</u></span></font></b></font></p>
+  <p align="center"><i><font size="5" color="#B90000"><b>Select Dates</b></font></i></p>
+  <p align="center"><b><font size="4"><font color="#B90000">First Class</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="T1" id="popup_container" size="20"></font></b></p>
+  <p align="center"><b><font size="4"><font color="#B90000">Second Class</font>&nbsp;&nbsp;
+  <input type="text" name="T2" id="popup_container1" size="20"></font></b></p>
+  <p align="center"><b><font size="4"><font color="#B90000">Third&nbsp;Class</font>&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="T3"  id="popup_container2" size="20" size="20"></font></b></p>
+  <p align="center"><b><font size="4"><font color="#B90000">Fourth Class</font>&nbsp;&nbsp;
+  <input type="text" name="T4" id="popup_container3" size="20"> </font></b></p>
+  <p align="center">&nbsp;</p>
+  <p align="center">
+  <input type="submit" value="Submit" name="B1" style="font-family: Engravers MT; font-size: 14pt; color: #FF0000; font-style: italic; font-weight: bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="reset" value="Reset" name="B2" style="color: #FF0000; font-family: Engravers MT; font-style: italic; font-weight: bold; font-size: 14pt"></p>
+</form>
+<p align="center">&nbsp;</p>
+
+</body>
+
+</html>
